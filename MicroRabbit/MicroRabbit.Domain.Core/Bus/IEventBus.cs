@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MicroRabbit.Domain.Core.Bus
 {
-    interface IEventBus
+    public interface IEventBus
     {
         Task SendCommand<T>(T command) where T : Command;
 
